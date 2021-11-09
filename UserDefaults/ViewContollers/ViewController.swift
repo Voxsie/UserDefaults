@@ -18,7 +18,6 @@ class ViewController: UIViewController {
         let encoder = JSONEncoder()
         let encodedUserSettings = try? encoder.encode(userSettings)
         userDefaults.set(encodedUserSettings, forKey: Keys.appSettings)
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {
